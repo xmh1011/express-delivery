@@ -1,0 +1,5 @@
+log:
+  level: 5
+storage:
+  sourceName: "./testdata/test.db"
+  logLevel: 1

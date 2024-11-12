@@ -1,5 +1,5 @@
 log:
-  level: 5
+  level: ${LOG_LEVEL}
 storage:
-  sourceName: "test.db"
-  logLevel: 1
+  sourceName: ${SQLITE_SOURCE_NAME}
+  logLevel: ${SQLITE_LOG_LEVEL}
