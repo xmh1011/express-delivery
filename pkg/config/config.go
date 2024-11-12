@@ -1,7 +1,6 @@
 package config
 
 import (
-	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 
 	"github.com/xmh1011/express-delivery/pkg/log"
@@ -32,10 +31,4 @@ func LoadConfig(configFile string) (*Config, error) {
 	}
 
 	return &config, nil
-}
-
-// AddFlags 向 FlagSet 添加命令行标志
-func (c *Config) AddFlags(fs *pflag.FlagSet) {
-	c.Log.AddFlags(fs, "log")
-	c.Storage.AddFlags(fs, "storage")
 }

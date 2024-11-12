@@ -15,12 +15,6 @@ const (
 )
 
 const (
-	DBEngineSQLite = "sqlite"
-
-	Log = "log"
-)
-
-const (
 	DefaultConfigType = "yaml"
 )
 
