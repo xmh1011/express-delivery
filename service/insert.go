@@ -40,7 +40,11 @@ func generateOrders(db *gorm.DB, userIDs []int64, orderCount int64) {
 			Weight:    weight,
 			CreatedAt: time.Now(),
 		}
-		db.Create(&order)
+		err := db.Create(&order).Error
+		if err != nil {
+			log.L.Errorf("Failed to insert order: %v", err)
+			continue
+		}
 	}
 
 	log.L.Debugf("Successfully inserted %d orders", orderCount)
