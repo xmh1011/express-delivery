@@ -20,7 +20,7 @@ make build
 ### Insert Sample Data
 
 ```bash
-./output/express-delivery insert --userCount=1000 --orderCount=100000
+./output/express-delivery insert --user=1000 --order=100000
 ```
 
 
